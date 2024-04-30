@@ -1,4 +1,4 @@
-package boardServer.user;
+package boardServer.user.model;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -35,7 +35,7 @@ public class UserDao {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			
-			String url = "jdbc:mysql://localhost:3306/?user=root";		
+			String url = "jdbc:mysql://localhost:3306/board_server_db";		
 			String user = "root";		
 			String password = "0514";		
 			
